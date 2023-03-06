@@ -26,11 +26,10 @@ export const Sidebar = () => {
     return <nav className="sidebar">
         <ul className="cat-items">
             {category ? category.map((item, index) =>
-                <li className="cat-item">
+                <li className="cat-item" key={index} >
                     <NavLink 
-                        classname={({isActive}) => isActive ? "active" : null} 
+                        className={({isActive}) => isActive ? "active" : null} 
                         to={`${item.id}`} 
-                        key={index} className="category-btn"
                     >
                         {item.name}
                     </NavLink>

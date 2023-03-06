@@ -33,14 +33,14 @@
     position: relative;
 }
 
-@media (min-width: 360px) {
+@media(min-width:320px) and (max-width: 640px) {
 
 }
 
-@media (min-width: 500px) {
+@media(min-width:641px) and (max-width: 1007px) {
     
 }
 
-@media (min-width: 700px) {
+@media (min-width: 1008px)  and (max-width: 1920px){
     
 }

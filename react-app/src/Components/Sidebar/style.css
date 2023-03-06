@@ -1,0 +1,46 @@
+.sidebar {
+    width: 20%;
+    height: 100%;
+    background-color: rgb(124, 117, 190);
+    padding: 30px 10px;
+}
+
+.cat-items {
+    list-style: none;
+}
+
+.cat-item {
+    padding: 20px 20px;
+}
+
+.cat-item:hover a::after, .active::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    background-color: #ffffff;
+    width: 100%;
+    top: 110%;
+    left: 0%;
+}
+
+.cat-item > a {
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    position: relative;
+}
+
+@media (min-width: 360px) {
+
+}
+
+@media (min-width: 500px) {
+    
+}
+
+@media (min-width: 700px) {
+    
+}

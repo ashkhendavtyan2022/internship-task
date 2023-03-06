@@ -37,6 +37,7 @@
     border-radius: 5px;
     background-color: rgb(124, 117, 190);
     font-size: 1rem;
+    font-family: "Lucida Console", "Courier New", monospace;
     color: #ffffff;
     cursor: pointer;
 }
@@ -61,7 +62,4 @@
         gap: 40px;
     }
     
-}
-
-@media (max-width: 1920px){
 }

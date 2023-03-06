@@ -8,9 +8,11 @@ export const Main = () => {
     const [images, setCatImages]  = useState([])
     const [pagecount, setPagecount] = useState(1)
 
-    useEffect(()=>{
-        GetImageList(pagecount, id)
-    }, [id])
+    useEffect(() => {
+        if (pagecount === 1) {
+            GetImageList(pagecount, id);
+        }
+    }, [id, pagecount]);
        
     const GetImageList = async(page, id) => {
         const result = await GetPictures(page, id)
@@ -19,7 +21,7 @@ export const Main = () => {
         }
     }
 
-   const loadMore = async (page) => {
+   const loadMore = async(page) => {
         try {
             page++;
             const result = await GetPictures(page, id)
